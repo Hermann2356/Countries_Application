@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Countries_Application</string>
+    <string name="enter_a_country">Enter a country</string>
 </resources>

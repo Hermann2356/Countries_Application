@@ -13,7 +13,7 @@ public class Country {
     private String region;
     private String subregion;
     private String population;
-    private int[] latlng;
+    private List<Float> latlng;
     private String demonym;
     private double area;
     private double gini;
@@ -30,7 +30,7 @@ public class Country {
 
     public Country(String name, List<String> topLevelDomain, String alpha2Code, String alpha3Code,
                    List<String> callingCodes, String capital, List<String> altSpellings,
-                   String region, String subregion, String population, int[] latlng,
+                   String region, String subregion, String population, List<Float> latlng,
                    String demonym, double area, double gini, List<String> timezones,
                    List<String> borders, String nativeName, String numericCode,
                    List<Currency> currencies, List<Language> languages, Translation translations,
@@ -141,11 +141,11 @@ public class Country {
         this.population = population;
     }
 
-    public int[] getLatlng() {
+    public List<Float> getLatlng() {
         return latlng;
     }
 
-    public void setLatlng(int[] latlng) {
+    public void setLatlng(List<Float>latlng) {
         this.latlng = latlng;
     }
 
